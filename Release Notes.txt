@@ -1,0 +1,23 @@
+Release v.0.1 
+CPK/CVL Regression script usage
+Original script developed by Mike Han. Script enhanced to support CPK Regression usage and requirement by Libby Mitchell and Shariah Green.  
+
+Script flow:
+1) Schedule regression cadence. 
+2) Determine latest driver release and copy over locally. 
+3) Install driver. 
+2) Setup log output for test results.
+3) Execute tests.
+4) Generate summary report of results from each test.
+5) TO DO: Cleanup parsed log a bit more C:\log-parser\ summary.py -r "c:\path\log files"
+6) TO DO: Email summary report out to CPK Engineering.
+7) After tests run on SW Reference, uninstall driver and reinstall from PC branch. Rerun series of tests.
+
+Clarifying IP vs MGMT variables:
+PEER=10.166.152.34 (MGT IPs)
+SUT=10.166.156.14 (MGT IPs)
+AUT=8086:1592,1 (Device info)
+AIP=192.168.150.1 (SUT/HOST)
+BUT=8086:1592,1 (Device info)
+BIP=192.168.150.2 (Client)
+OUTPUT="C:\AGAT_framework_log\CPK_RegressionV1" (where to store output file)
